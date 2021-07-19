@@ -1,0 +1,54 @@
+.container{
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: aqua;
+    color: cornflowerblue;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    margin-top: 5px;
+}
+
+.menu-item{
+    display: block;
+    width: 200px;
+    height: 30px;
+    background-color: lightblue;
+    margin-top: 2px;
+    color: cornflowerblue;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    user-select: none;
+    text-decoration: none;
+}
+#check1,
+#check2{
+    display: none;}
+    
+.menu1,
+.menu2{
+    display: none;
+   }
+
+#check1:checked ~ .menu1{
+    display: none;
+}
+
+#check2:checked ~ .menu2{
+    display: block;
+}
+
+#check1:checked ~ .container {
+    background-color: lightskyblue;
+}
+
+.wrapper{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+sss
